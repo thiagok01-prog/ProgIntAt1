@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      color: #2e2d2d;
+    }
+    .cv-container {
+      width: 800px;
+      background-color: #ffffff;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .sidebar {
+      width: 32%;
+      background-color: #434a53;
+      color: #ffffff;
+      padding: 30px 20px;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+    .sidebar h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #686f77;
+      padding-bottom: 5px;
+      font-weight: normal;
+    }
+    .sidebar-section {
+      margin-bottom: 25px;
+    }
+    .info-group {
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .info-group label {
+      display: block;
+      font-weight: bold;
+      color: #e0e0e0;
+      margin-bottom: 2px;
+    }
+    .info-group p {
+      color: #cccccc;
+    }
+
+    /* Coluna Direita */
+    .main-content {
+      width: 68%;
+      padding: 30px 30px;
+    }
+    .main-content h1 {
+      font-size: 32px;
+      color: #1b1b1b;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .summary {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #4e4e4e;
+      margin-bottom: 25px;
+    }
+    .section-title {
+      font-size: 20px;
+      color: #1f1f1f;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .experience-item {
+      margin-bottom: 20px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 15px;
+      color: #222121;
+    }
+    .job-date {
+      font-size: 13px;
+      color: #808080;
+    }
+    .job-company {
+      font-style: italic;
+      font-size: 13px;
+      color: #686666;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+    .experience-item ul {
+      margin-left: 20px;
+      font-size: 13px;
+      color: #5a5959;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <!-- Coluna Lateral -->
+    <aside class="sidebar">
+      <img src="TimBernersLee.jpg" alt="Thiago Kuminek" class="profile-img">
+
+      <div class="sidebar-section">
+        <h3>Pessoal</h3>
+        
+        <div class="info-group">
+          <label>Nome</label>
+          <p>Thiago Kuminek</p>
+        </div>
+
+        <div class="info-group">
+          <label>Endereço</label>
+          <p>Rua da Paz, 250<br>7100-011 Lisboa</p>
+        </div>
+
+        <div class="info-group">
+          <label>Número de telefone</label>
+          <p>9630002121</p>
+        </div>
+
+        <div class="info-group">
+          <label>Email</label>
+          <p>thiago.k01@aluno.ifsc.edu.br</p>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Interesses</h3>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <h1>Thiago Kuminek</h1>
+      
+      <p class="summary">
+        Um estudante do Instituto Federal de Santa Catarina
+      </p>
+
+      <h2 class="section-title">Experiência profissional</h2>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <span class="job-title">Estudante</span>
+          <span class="job-date">2021 - 2026</span>
+        </div>
+        <div class="job-company">IFSC</div>
+        <ul>
+          <li>Página on/off SEO</li>
+          <li>Estratégias de linkbuilding</li>
+          <li>Criação de conteúdo relevante</li>
+          <li>Trabalho com ferramentas online: Ahrefs, Google Analytics, Google Search Console, Google Adwords</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <span class="job-title">Assistente de Vendas</span>
+          <span class="job-date">2015 - 2016</span>
+        </div>
+        <div class="job-company">Salsa, Lisboa</div>
+        <ul>
+          <li>Contribuição para os objetivos de vendas</li>
+          <li>Gestão de inventário</li>
+          <li>Apoio a clientes</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
