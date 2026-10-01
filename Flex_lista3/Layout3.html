@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .gallery {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      height: 320px;
+    }
+
+    .card {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      padding: 12px;
+    }
+
+    .card.collapsed {
+      width: 45px;
+      height: 260px;
+      border-radius: 25px;
+      justify-content: center;
+    }
+
+    .card.expanded {
+      width: 380px;
+      height: 300px;
+      border-radius: 24px;
+    }
+
+    .card.expanded::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+    }
+
+    .icon {
+      position: relative;
+      z-index: 2;
+      width: 28px;
+      height: 28px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .subtitle {
+      font-size: 10px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    
+    <div class="card collapsed" style="background-image: url('figura 01.jpg');">
+      <div class="icon">🏃</div>
+    </div>
+
+    <div class="card expanded" style="background-image: url('pc2000.jpg');">
+      <div class="content">
+        <div class="icon">❄️</div>
+        <div class="info">
+          <span class="title">Oretemauw</span>
+          <span class="subtitle">Ômuke trughte a otufta</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card collapsed" style="background-image: url('pc2000.jpg');">
+      <div class="icon">🌲</div>
+    </div>
+
+    <div class="card collapsed" style="background-image: url('TimBernersLee.jpg');">
+      <div class="icon">💧</div>
+    </div>
+
+    <div class="card collapsed" style="background-image: url('figura 01.jpg');">
+      <div class="icon">⚙️</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

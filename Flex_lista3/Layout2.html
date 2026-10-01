@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #a0a0a0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .user-list {
+      background-color: #ffffff;
+      width: 320px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-card {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .user-card:last-child {
+      border-bottom: none;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .address {
+      font-size: 12px;
+      color: #888888;
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="user-list">
+    <div class="user-card">
+      <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Linda Hart" class="avatar">
+      <div class="info">
+        <span class="name">Linda Hart</span>
+        <span class="address">6765 Shady Ln Dr</span>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Roger Medina" class="avatar">
+      <div class="info">
+        <span class="name">Roger Medina</span>
+        <span class="address">2420 Paddock Way</span>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Dean Sullivan" class="avatar">
+      <div class="info">
+        <span class="name">Dean Sullivan</span>
+        <span class="address">6727 Airplane Ave</span>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Elizabeth Austin" class="avatar">
+      <div class="info">
+        <span class="name">Elizabeth Austin</span>
+        <span class="address">6685 Blossom Hill Rd</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

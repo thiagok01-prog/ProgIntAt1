@@ -1,0 +1,128 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 150px 1fr 120px;
+      grid-template-rows: auto auto 1fr auto auto;
+      gap: 10px;
+      min-height: 100vh;
+    }
+
+    .header {
+      grid-column: 1 / -1;
+      background-color: #f1a900;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .left-aside {
+      grid-column: 1;
+      grid-row: 2 / span 3;
+      background-color: #1e9651;
+      color: #ffffff;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .banner {
+      grid-column: 2;
+      grid-row: 2;
+      background-color: #d93829;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .main-content {
+      grid-column: 2;
+      grid-row: 3;
+      background-color: #3b82f6;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      min-height: 400px;
+    }
+
+    .low-content {
+      grid-column: 2;
+      grid-row: 4;
+      background-color: #1e9651;
+      color: #ffffff;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .right-aside {
+      grid-column: 3;
+      grid-row: 2 / span 3;
+      background-color: #f1a900;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      background-color: #3b82f6;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header { order: 1; }
+      .banner { order: 2; }
+      .left-aside { order: 3; }
+      .main-content { order: 4; }
+      .right-aside { order: 5; }
+      .low-content { order: 6; }
+      .footer { order: 7; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">Header</header>
+    <aside class="left-aside">Left Aside</aside>
+    <div class="banner">Banner</div>
+    <main class="main-content">
+      <div>Main Content</div>
+      <small>Width: 916, Height: 873</small>
+    </main>
+    <div class="low-content">Low Content</div>
+    <aside class="right-aside">Right Aside</aside>
+    <footer class="footer">Footer</footer>
+  </div>
+
+</body>
+</html>
